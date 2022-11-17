@@ -1,0 +1,12 @@
+Unit Testing
+Check each unit of code
+
+PyTest
+	test/test_main.py
+		import pytest
+		from my_project import my_function
+
+		def test_my_function():
+			result = my_function()
+			assert result == "Hello World!"
+

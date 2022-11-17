@@ -1,0 +1,16 @@
+Coninuous Integration
+
+Travis
+	.travis.yaml
+		lagnuage: python
+		os: linux
+		install: 
+			- pip install tox
+		git: 
+			depth: false
+		branches:
+			only:
+			-"master"
+		cache:
+			directories:
+			-$HOME/.cache/pip
